@@ -76,14 +76,6 @@ public class View {
             System.out.println(product);
         }
     }
-//    public static void deleteProduct(int id) {
-//        ArrayList<Product> products= productController.getAll();
-//        for (Product product:products){
-//            if (product.getId()==id){
-//                products.remove(id);
-//            }
-//        }
-//    }
     private static int inputId() {
         System.out.print("Nhập ID cần chỉnh sửa: ");
         return Integer.parseInt(scanner.nextLine());

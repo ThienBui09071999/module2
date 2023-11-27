@@ -1,13 +1,11 @@
 package ss12_java_collection_framework.arraylist_linkedlist.repository;
 
 import ss12_java_collection_framework.arraylist_linkedlist.model.Product;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductRepository implements IProductRepository {
     private static ArrayList<Product> products = new ArrayList<>();
-
 
     @Override
     public ArrayList<Product> getAll() {
@@ -32,7 +30,7 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public List<Product> cloneProduct() {
+    public List<Product> cloneProduct(){
         ArrayList<Product> productClone = new ArrayList<>();
         for (int i =0;i< products.size();i++){
             productClone.add(products.get(i));

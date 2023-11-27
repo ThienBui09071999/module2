@@ -3,7 +3,6 @@ package ss12_java_collection_framework.arraylist_linkedlist.service;
 import ss12_java_collection_framework.arraylist_linkedlist.model.Product;
 import ss12_java_collection_framework.arraylist_linkedlist.repository.IProductRepository;
 import ss12_java_collection_framework.arraylist_linkedlist.repository.ProductRepository;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -51,7 +50,7 @@ public class ProductService implements IProductService {
                 double price = Double.parseDouble(scanner.nextLine());
                 System.out.print("Nhập miêu tả mới: ");
                 String description = scanner.nextLine();
-                productRepository.edit(i,name,description,price);
+                productRepository.edit(id,name,description,price);
                 isExist = true;
                 System.out.println("chỉnh sửa thành công");
             }
