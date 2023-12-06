@@ -34,7 +34,7 @@ public class ProductService implements IProductService {
             }
         }
         if (!isExist) {
-            System.out.println("K tim thay id can xoa");
+            System.out.println("Không tìm thấy ID");
         }
     }
 
