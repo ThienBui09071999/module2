@@ -1,4 +1,4 @@
-package ss15.TriangleApp;
+package ss15.triangleApp;
 
 import java.util.Scanner;
 public class Triangle {
