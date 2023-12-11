@@ -22,7 +22,7 @@ public class Triangle {
         if (a <= 0 || b <= 0 || c <= 0 ) {
             throw new IllegalTriangleException("a= " + a + " b= " + b + " c= " + c + " must  > 0");
         } else if ( a + b <= c || a + c <= b || b + c <= a) {
-            throw  new IllegalTriangleException("The sum of the two sides must be greater than the remaining side");
+            throw new IllegalTriangleException("The sum of the two sides must be greater than the remaining side");
         } else System.out.println("a= " + a + " b= " + b + " c= " + c + " are three triangle sides");
     }
 

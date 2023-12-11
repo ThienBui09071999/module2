@@ -1,5 +1,7 @@
 package ss8_mvc.model;
 
+import java.util.Objects;
+
 public class Customer {
     private int id;
     private String name;
@@ -26,10 +28,24 @@ public class Customer {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        Customer customer = (Customer) obj;
+        return this.id==customer.getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
     public String toString() {
         return "Customer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+    public String getInfoToCSV(){
+        return this.id+","+this.name;
     }
 }
